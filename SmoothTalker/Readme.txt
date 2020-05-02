@@ -1,4 +1,11 @@
-﻿This is a work in progress!
+﻿#SmoothTalker
+
+Highly improves chances on all persuasion dialogs with a friend. 
+
+For me the game seems to use very randomized results that made it very frustrating. 
+The mod probably should be do more calculation and respect the game-mechanics, it's kind of blunt currently but it will save you the savescumming.
+
+
 
 Helpful information:
 
