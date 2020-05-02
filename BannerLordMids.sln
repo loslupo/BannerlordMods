@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoHoudini", "NoHoudini\NoHoudini.csproj", "{B1C823F0-C95F-482F-9C0E-728FA160F064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmoothTalker", "SmoothTalker\SmoothTalker.csproj", "{1D73574B-EB84-48BA-899E-0C24D7EF86EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1C823F0-C95F-482F-9C0E-728FA160F064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C823F0-C95F-482F-9C0E-728FA160F064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C823F0-C95F-482F-9C0E-728FA160F064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C823F0-C95F-482F-9C0E-728FA160F064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D73574B-EB84-48BA-899E-0C24D7EF86EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D73574B-EB84-48BA-899E-0C24D7EF86EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D73574B-EB84-48BA-899E-0C24D7EF86EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D73574B-EB84-48BA-899E-0C24D7EF86EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87C55095-4893-4B91-AABE-24F2745ACDF9}
+	EndGlobalSection
+EndGlobal
