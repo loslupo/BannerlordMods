@@ -1,9 +1,7 @@
 ﻿using TaleWorlds.Core;
-using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem.Conversation.Persuasion;
 using TaleWorlds.CampaignSystem;
-using TaleWorlds.CampaignSystem.SandBox.GameComponents;
 namespace SmoothTalker
 {
     public class SubModule : MBSubModuleBase
