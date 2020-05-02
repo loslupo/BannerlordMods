@@ -72,7 +72,7 @@ namespace TheMessenger
                 //ConversationHelper.HeroAddressesPlayer(enemyLeader);
                 //TaleWorlds.CampaignSystem.MobileParty
                 //, TaleWorlds.Core.IAgent, TaleWorlds.Core.IAgent)
-                Agent AgentOther = new Agent(;
+                Agent AgentOther = new Agent();
                 AgentOther. = enemyLeader;
 
                 ConversationManager.SetupAndStartMapConversation(MobileParty.MainParty, Agent.Main, Agent.);

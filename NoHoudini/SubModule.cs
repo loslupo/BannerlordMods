@@ -14,7 +14,8 @@ namespace NoHoudini
     {
         bool bReportedError = false;
         int iReportedActive = -1;
-        int WatchForNrDays = 180;
+        int iWatchForNrDays = 180;
+        int iMinimalGold = 10000;
         public override bool DoLoading(Game game)
         {
             Action<Hero> originalDailyHeroTick = null;
@@ -54,13 +55,13 @@ namespace NoHoudini
                     if (prisoner.PartyBelongedToAsPrisoner.MapFaction == Hero.MainHero.PartyBelongedTo.Party.MapFaction) // Only my prisoners
                     {
                         
-                        if (prisoner.CaptivityStartTime.ElapsedDaysUntilNow < WatchForNrDays)
+                        if (prisoner.CaptivityStartTime.ElapsedDaysUntilNow < iWatchForNrDays)
                         {
-                            if (Hero.MainHero.Gold > 10000 && prisoner.MapFaction.IsAtWarWith(Hero.MainHero.PartyBelongedTo.Party.MapFaction) && !prisoner.PartyBelongedToAsPrisoner.IsStarving && prisoner.PartyBelongedToAsPrisoner.NumberOfHealthyMembers > prisoner.PartyBelongedToAsPrisoner.NumberOfPrisoners && prisoner.PartyBelongedToAsPrisoner.NumberOfMenWithHorse > 0)
+                            if (Hero.MainHero.Gold > iMinimalGold && prisoner.MapFaction.IsAtWarWith(Hero.MainHero.PartyBelongedTo.Party.MapFaction) && !prisoner.PartyBelongedToAsPrisoner.IsStarving && prisoner.PartyBelongedToAsPrisoner.NumberOfHealthyMembers > prisoner.PartyBelongedToAsPrisoner.NumberOfPrisoners && prisoner.PartyBelongedToAsPrisoner.NumberOfMenWithHorse > 0)
                             {
                                 if (iReportedActive != CampaignTime.Now.GetDayOfYear)
                                 {
-                                    int iDaysLeft = WatchForNrDays -Convert.ToInt32(prisoner.CaptivityStartTime.ElapsedDaysUntilNow);
+                                    int iDaysLeft = iWatchForNrDays - Convert.ToInt32(prisoner.CaptivityStartTime.ElapsedDaysUntilNow);
                                     InformationManager.DisplayMessage(new InformationMessage($"Prisoner {prisoner.Name} has double guards for another {iDaysLeft} days to prevent escaping."));
                                     iReportedActive = CampaignTime.Now.GetDayOfYear;
                                 }
